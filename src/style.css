@@ -30,7 +30,7 @@ main {
   font-weight: 100;
   padding-right: 50px;
   align-items: end;
-  overflow:auto;
+  overflow: auto;
 }
 .display #equation-display {
   font-size: 5.625rem;
@@ -78,6 +78,3 @@ main {
   text-align: left;
   padding-left: 30px;
 }
-/* .special-btn{
-  display: flex;
-} */

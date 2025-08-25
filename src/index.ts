@@ -1,3 +1,4 @@
+
 const resultDisplay = document.querySelector<HTMLParagraphElement>('#result-display')!;
 const equationDisplay = document.querySelector<HTMLParagraphElement>('#equation-display')!;
 const clearBtn = document.querySelector<HTMLButtonElement>('[data-clear]');
@@ -71,3 +72,6 @@ equalBtn?.addEventListener('click', () => {
   equationDisplay.textContent = prevdis;
   resultDisplay.textContent = res;
 });
+
+
+
