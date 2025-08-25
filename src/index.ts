@@ -1,4 +1,3 @@
-
 const resultDisplay = document.querySelector<HTMLParagraphElement>('#result-display')!;
 const equationDisplay = document.querySelector<HTMLParagraphElement>('#equation-display')!;
 const clearBtn = document.querySelector<HTMLButtonElement>('[data-clear]');
@@ -21,7 +20,7 @@ numberBtn?.forEach((btn) => {
 
 operandBtn?.forEach((btn) => {
   btn.addEventListener('click', () => {
-    appendNumber(btn);
+    appendOperand(btn);
   });
 });
 
@@ -47,8 +46,10 @@ function appendNumber(btn: HTMLButtonElement): void {
 }
 
 // to select an operation
-function selectOperation(btn: HTMLButtonElement): void {
-  display.push(btn.textContent);
+function appendOperand(btn: HTMLButtonElement): void {
+  // gets the data attribute value  turns it to string
+  const symbol = btn.getAttribute('data-operation') ?? ''.toString();
+  display.push(symbol);
   appendDisplay();
 }
 
@@ -72,6 +73,3 @@ equalBtn?.addEventListener('click', () => {
   equationDisplay.textContent = prevdis;
   resultDisplay.textContent = res;
 });
-
-
-

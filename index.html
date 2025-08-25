@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css" />
     <script type="module" src="./dist/index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Calculator</title>
   </head>
   <body>
@@ -16,26 +23,26 @@
       <section class="buttons">
         <button data-clear>AC</button>
         <button data-plusMinus>+/-</button>
-        <button data-operation="percentage">&percnt;</button>
-        <button data-operation="division">&divide;</button>
+        <button data-operation="%">&percnt;</button>
+        <button data-operation="/">&divide;</button>
 
-        <button data-number="seven">7</button>
-        <button data-number="eight">8</button>
-        <button data-number="nine">9</button>
-        <button data-operation="multiply">&times;</button>
+        <button data-number="7">7</button>
+        <button data-number="8">8</button>
+        <button data-number="9">9</button>
+        <button data-operation="*"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></i></button>
 
-        <button data-number="four">4</button>
-        <button data-number="five">5</button>
-        <button data-number="six">6</button>
-        <button data-operation="minus">-</button>
+        <button data-number="4">4</button>
+        <button data-number="5">5</button>
+        <button data-number="6">6</button>
+        <button data-operation="-">-</button>
 
-        <button data-number="one">1</button>
-        <button data-number="two">2</button>
-        <button data-number="three">3</button>
-        <button data-operation="plus">+</button>
+        <button data-number="1">1</button>
+        <button data-number="2">2</button>
+        <button data-number="3">3</button>
+        <button data-operation="+">+</button>
 
-        <button data-number="zero" id="zero-btn">0</button>
-        <button data-number="decimal">.</button>
+        <button data-number="0" id="zero-btn">0</button>
+        <button data-number=".">.</button>
         <button data-equals>=</button>
       </section>
     </main>
