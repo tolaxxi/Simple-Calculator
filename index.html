@@ -10,19 +10,33 @@
   <body>
     <main>
       <section class="display">
-      
-        <p>945</p>
+        <p id="equation-display"></p>
+        <p id="result-display"></p>
       </section>
       <section class="buttons">
-        <button>AC</button>
-        <button>+/-</button><button>&percnt;</button><button>&divide;</button
-        ><button>7</button><button>8</button><button>9</button><button>&times;</button><button>4</button><button>5</button
-        ><button>6</button><button>-</button><button>1</button><button>2</button
-        ><button>3</button><button>+</button> 
-      
-          <button id="zero-btn">0</button><button>.</button
-        ><button>=</button>
-       
+        <button data-clear>AC</button>
+        <button data-plusMinus>+/-</button>
+        <button data-operation="percentage">&percnt;</button>
+        <button data-operation="division">&divide;</button>
+
+        <button data-number="seven">7</button>
+        <button data-number="eight">8</button>
+        <button data-number="nine">9</button>
+        <button data-operation="multiply">&times;</button>
+
+        <button data-number="four">4</button>
+        <button data-number="five">5</button>
+        <button data-number="six">6</button>
+        <button data-operation="minus">-</button>
+
+        <button data-number="one">1</button>
+        <button data-number="two">2</button>
+        <button data-number="three">3</button>
+        <button data-operation="plus">+</button>
+
+        <button data-number="zero" id="zero-btn">0</button>
+        <button data-number="decimal">.</button>
+        <button data-equals>=</button>
       </section>
     </main>
   </body>
